@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Facebook Regression">
+
+  <test thread-count="5" name="Test">
+  
+  <!-- ********Environment Variables************* -->
+		
+		<parameter name="browser" value="chrome"/>
+		<parameter name="chromePath"
+			value="C:\\Users\\Kamal\\chromedriver.exe" />
+		<parameter name="firefoxPath"
+			value="C:\\Users\\Kamal\\geckodriver.exe" />
+		<parameter name="url"
+			value="https://www.facebook.com/" />
+  
+    <classes>
+    <!-- ***********TestCases******************** -->
+       <class name="com.testcases.signUpTest"/>
+       <class name="com.testcases.loginTest"/>
+       <class name="com.testcases.failedTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

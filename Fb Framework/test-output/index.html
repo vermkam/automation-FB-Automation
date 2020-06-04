@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Facebook_Regression">
+              <span class="suite-name border-failed">Facebook Regression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Facebook_Regression">
+                    <span>C:\Users\Kamal\eclipse-workspace\Fb Framework\src\TestNG\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Facebook_Regression">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Facebook_Regression">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Facebook_Regression">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Facebook_Regression">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Facebook_Regression">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Facebook_Regression">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Facebook_Regression" class="hide-methods failed suite-Facebook_Regression"> (hide)</a> <!-- hide-methods failed suite-Facebook_Regression -->
+                      <a href="#" panel-name="suite-Facebook_Regression" class="show-methods failed suite-Facebook_Regression"> (show)</a> <!-- show-methods failed suite-Facebook_Regression -->
+                    </span>
+                    <div class="method-list-content failed suite-Facebook_Regression">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Regression" title="com.testcases.failedTest" hash-for-method="failTest">failTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Facebook_Regression -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Facebook_Regression" class="hide-methods passed suite-Facebook_Regression"> (hide)</a> <!-- hide-methods passed suite-Facebook_Regression -->
+                      <a href="#" panel-name="suite-Facebook_Regression" class="show-methods passed suite-Facebook_Regression"> (show)</a> <!-- show-methods passed suite-Facebook_Regression -->
+                    </span>
+                    <div class="method-list-content passed suite-Facebook_Regression">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Regression" title="com.testcases.loginTest" hash-for-method="loginToFacebook">loginToFacebook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Regression" title="com.testcases.loginTest" hash-for-method="personalProfile">personalProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Regression" title="com.testcases.signUpTest" hash-for-method="signUpPageTest(Keerat, Gill, keeratg@gmail.com, keeratg@gmail.com, jhjh9900, Jan, 9, 1998, )">signUpPageTest(Keerat, Gill, keeratg@gmail.com, keeratg@gmail.com, jhjh9900, Jan, 9, 1998, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Regression" title="com.testcases.signUpTest" hash-for-method="signUpPageTest(Abhilasha, Kapoor, AbhiKap@hotmail.ca, AbhiKap@hotmail.ca, , Nov, 19, 1991, Female)">signUpPageTest(Abhilasha, Kapoor, AbhiKap@hotmail.ca, AbhiKap@hotmail.ca, , Nov, 19, 1991, Female)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Regression" title="com.testcases.signUpTest" hash-for-method="signUpPageTest(, Wangru, susery@yahoo.com, susery@yahoo.com, hjjk0077, Feb, 2, 1995, Custom)">signUpPageTest(, Wangru, susery@yahoo.com, susery@yahoo.com, hjjk0077, Feb, 2, 1995, Custom)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Facebook_Regression" title="com.testcases.signUpTest" hash-for-method="signUpPageTest(Bony, , Boni@gmail.com, Boni@gmail.com, jhjhjh7, Mar, 18, 1998, Male)">signUpPageTest(Bony, , Boni@gmail.com, Boni@gmail.com, jhjhjh7, Mar, 18, 1998, Male)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Facebook_Regression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Facebook_Regression" class="panel Facebook_Regression">
+          <div class="suite-Facebook_Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testcases.failedTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="failTest">
+                  </a> <!-- failTest -->
+                  <span class="method-name">failTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Logic] but found [Code]
+	at com.testcases.failedTest.failTest(failedTest.java:14)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Facebook_Regression-class-failed -->
+          <div class="suite-Facebook_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.signUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpPageTest(Keerat, Gill, keeratg@gmail.com, keeratg@gmail.com, jhjh9900, Jan, 9, 1998, )">
+                  </a> <!-- signUpPageTest(Keerat, Gill, keeratg@gmail.com, keeratg@gmail.com, jhjh9900, Jan, 9, 1998, ) -->
+                  <span class="method-name">signUpPageTest</span>
+                  <span class="parameters">(Keerat, Gill, keeratg@gmail.com, keeratg@gmail.com, jhjh9900, Jan, 9, 1998, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpPageTest(Abhilasha, Kapoor, AbhiKap@hotmail.ca, AbhiKap@hotmail.ca, , Nov, 19, 1991, Female)">
+                  </a> <!-- signUpPageTest(Abhilasha, Kapoor, AbhiKap@hotmail.ca, AbhiKap@hotmail.ca, , Nov, 19, 1991, Female) -->
+                  <span class="method-name">signUpPageTest</span>
+                  <span class="parameters">(Abhilasha, Kapoor, AbhiKap@hotmail.ca, AbhiKap@hotmail.ca, , Nov, 19, 1991, Female)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpPageTest(, Wangru, susery@yahoo.com, susery@yahoo.com, hjjk0077, Feb, 2, 1995, Custom)">
+                  </a> <!-- signUpPageTest(, Wangru, susery@yahoo.com, susery@yahoo.com, hjjk0077, Feb, 2, 1995, Custom) -->
+                  <span class="method-name">signUpPageTest</span>
+                  <span class="parameters">(, Wangru, susery@yahoo.com, susery@yahoo.com, hjjk0077, Feb, 2, 1995, Custom)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpPageTest(Bony, , Boni@gmail.com, Boni@gmail.com, jhjhjh7, Mar, 18, 1998, Male)">
+                  </a> <!-- signUpPageTest(Bony, , Boni@gmail.com, Boni@gmail.com, jhjhjh7, Mar, 18, 1998, Male) -->
+                  <span class="method-name">signUpPageTest</span>
+                  <span class="parameters">(Bony, , Boni@gmail.com, Boni@gmail.com, jhjhjh7, Mar, 18, 1998, Male)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Facebook_Regression-class-passed -->
+          <div class="suite-Facebook_Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testcases.loginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginToFacebook">
+                  </a> <!-- loginToFacebook -->
+                  <span class="method-name">loginToFacebook</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalProfile">
+                  </a> <!-- personalProfile -->
+                  <span class="method-name">personalProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Facebook_Regression-class-passed -->
+        </div> <!-- panel Facebook_Regression -->
+        <div panel-name="test-xml-Facebook_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Kamal\eclipse-workspace\Fb Framework\src\TestNG\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Facebook Regression&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;firefoxPath&quot; value=&quot;C:\\Users\\Kamal\\geckodriver.exe&quot;/&gt;
+    &lt;parameter name=&quot;chromePath&quot; value=&quot;C:\\Users\\Kamal\\chromedriver.exe&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.facebook.com/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testcases.signUpTest&quot;/&gt;
+      &lt;class name=&quot;com.testcases.loginTest&quot;/&gt;
+      &lt;class name=&quot;com.testcases.failedTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Facebook Regression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Facebook_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Facebook Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Facebook_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Facebook Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Facebook_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Facebook Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Facebook_Regression');
+function tableData_Facebook_Regression() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'personalProfile')
+data.setCell(0, 2, 'com.testcases.loginTest')
+data.setCell(0, 3, 6110);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'signUpPageTest')
+data.setCell(1, 2, 'com.testcases.signUpTest')
+data.setCell(1, 3, 4286);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'signUpPageTest')
+data.setCell(2, 2, 'com.testcases.signUpTest')
+data.setCell(2, 3, 4111);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'signUpPageTest')
+data.setCell(3, 2, 'com.testcases.signUpTest')
+data.setCell(3, 3, 3604);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'signUpPageTest')
+data.setCell(4, 2, 'com.testcases.signUpTest')
+data.setCell(4, 3, 3522);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginToFacebook')
+data.setCell(5, 2, 'com.testcases.loginTest')
+data.setCell(5, 3, 2555);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'failTest')
+data.setCell(6, 2, 'com.testcases.failedTest')
+data.setCell(6, 3, 3);
+window.suiteTableData['Facebook_Regression']= { tableData: data, tableDiv: 'times-div-Facebook_Regression'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <div id="times-div-Facebook_Regression">
+              </div> <!-- times-div-Facebook_Regression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Facebook_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Facebook Regression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Facebook_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testcases.failedTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.testcases.loginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Facebook_Regression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.signUpTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome, C:\\Users\\Kamal\\chromedriver.exe, C:\\Users\\Kamal\\geckodriver.exe, https://www.facebook....)</span>
+                <span class="method-start">133 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">signUpPageTest(Abhilasha, Kapoor, AbhiKap@hotmail.ca, AbhiKap@hotmail.ca, , Nov, 19, 1991, Female)</span>
+                <span class="method-start">7625 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearSuite([TestResult name=signUpPageTest status=SUCCESS method=signUpTest.signUpPageTest(java.lang.String, ja...)</span>
+                <span class="method-start">11237 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">signUpPageTest(Bony, , Boni@gmail.com, Boni@gmail.com, jhjhjh7, Mar, 18, 1998, Male)</span>
+                <span class="method-start">12889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearSuite([TestResult name=signUpPageTest status=SUCCESS method=signUpTest.signUpPageTest(java.lang.String, ja...)</span>
+                <span class="method-start">16414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">signUpPageTest(, Wangru, susery@yahoo.com, susery@yahoo.com, hjjk0077, Feb, 2, 1995, Custom)</span>
+                <span class="method-start">16875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearSuite([TestResult name=signUpPageTest status=SUCCESS method=signUpTest.signUpPageTest(java.lang.String, ja...)</span>
+                <span class="method-start">20989 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">signUpPageTest(Keerat, Gill, keeratg@gmail.com, keeratg@gmail.com, jhjh9900, Jan, 9, 1998, )</span>
+                <span class="method-start">21493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearSuite([TestResult name=signUpPageTest status=SUCCESS method=signUpTest.signUpPageTest(java.lang.String, ja...)</span>
+                <span class="method-start">25782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26235 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.loginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome, C:\\Users\\Kamal\\chromedriver.exe, C:\\Users\\Kamal\\geckodriver.exe, https://www.facebook....)</span>
+                <span class="method-start">26876 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginToFacebook</span>
+                <span class="method-start">31969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearSuite([TestResult name=loginToFacebook status=SUCCESS method=loginTest.loginToFacebook()[pri:0, instance:c...)</span>
+                <span class="method-start">34525 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">personalProfile</span>
+                <span class="method-start">35047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearSuite([TestResult name=personalProfile status=SUCCESS method=loginTest.personalProfile()[pri:1, instance:c...)</span>
+                <span class="method-start">41158 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">41818 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testcases.failedTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome, C:\\Users\\Kamal\\chromedriver.exe, C:\\Users\\Kamal\\geckodriver.exe, https://www.facebook....)</span>
+                <span class="method-start">42545 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">failTest</span>
+                <span class="method-start">47524 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearSuite([TestResult name=failTest status=FAILURE method=failedTest.failTest()[pri:0, instance:com.testcases....)</span>
+                <span class="method-start">47531 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">48020 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
